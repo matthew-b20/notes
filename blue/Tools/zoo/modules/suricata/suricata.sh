@@ -12,8 +12,8 @@ log="$HERE/suricata_log/suricata_$(date +%H-%M-%S).out"
 payload="$HERE/install_suricata.sh"
 
 meow_deploy \
-    "$payload" \
-    'sudo sh ~/install_suricata.sh' \
-    "$log"
+	"$payload" \
+	'sudo sh ~/install_suricata.sh' \
+ 	"$log"
 
 printf "\nSaved: %s\n" "$log"
